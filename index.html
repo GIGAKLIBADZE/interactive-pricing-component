@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Pricing Component</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="icon" href="./images/favicon-32x32.png">
+</head>
+<body>
+    <main>
+        <div class="introduction">
+            <img id="circles" src="./images/pattern-circles.svg" alt="Circles">
+            <h1>Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial. 
+                No credit card required.
+            </p>
+        </div>
+        <div class="container">
+            <div class="user-iteration-info">
+                <img id="slider" src="./images/icon-slider.svg" alt="Slider">
+                <p class="pageviews">100K PAGEVIEWS</p>
+                <p class="money">$16.00 <span class="month">/ month</span></p>
+                <input id="regulation" type="range" name="regulation" min="1" max="5" value="3">
+                
+            </div>
+            <div class="time-range-billing">
+                <p class="monthly-billing">Monthly Billing</p>
+                <input id="monthly-regulation" type="range" name="monthly-regulation" min="1" max="2" value="1">
+                <p class="yearly-billing">Yearly Billing</p>
+                <div class="sale">
+                    <p>25%<span class="discount">discount</span></p>
+                </div>
+            </div>
+            <div class="check-and-start">
+                <div class="check">
+                    <div class="first-check">
+                        <img id="check-img" src="./images/icon-check.svg" alt="Check sign">
+                        <p>Unlimited websites</p>
+                    </div>
+                    <div class="second-check">
+                        <img id="check-img" src="./images/icon-check.svg" alt="Check sign">
+                        <p>100% data ownership</p>                     
+                    </div>
+                    <div class="third-check">
+                        <img id="check-img" src="./images/icon-check.svg" alt="Check sign">
+                        <p>Email reports</p>
+                    </div>
+                </div>
+                <button><p>Start my trial</p></button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
