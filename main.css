@@ -13,6 +13,7 @@ body {
     background-image: url(./images/bg-pattern.svg);
     background-repeat: no-repeat;
     padding: 89px 0 88px 0 !important;
+    background-size: 100vw;
 }
 
 main {
@@ -49,6 +50,7 @@ main {
     line-height: 1.77;
     text-align: center;
     margin-top: 8px;
+    width: 189px;
 }
 
 .container {
@@ -97,6 +99,13 @@ main {
     background-color: #10d8c4;
     box-shadow: 0 15px 30px 0 rgba(0, 255, 231, 0.6);
     overflow: visible;
+    background-image: url(./images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#regulation::-webkit-slider-thumb:hover {
+    background-color: #7aeadf;
 }
 
 .money {
@@ -144,27 +153,38 @@ main {
     margin-left: 12px;
 }
 
-#monthly-regulation {
-    -webkit-appearance: none;
-    appearance: none;
+.switch input {
+    display: none;
+}
+
+.switch {
+    position: relative;
     width: 43px;
     height: 22px;
-    background: transparent;
-    position: relative;
     background-color: #cfd8ef;
     border-radius: 15px;
     margin-left: 12px;
 }
 
-#monthly-regulation::-webkit-slider-thumb {
-    -webkit-appearance: none;
+.switch:hover {
+    background-color: cyan;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
     width: 14px;
     height: 14px;
-    border-radius: 10px;
-    margin: 4px 4px 4px 4px;
     background-color: #fff;
-    overflow: visible;
+    margin: 4px 4px 4px 4px;
+    border-radius: 10px;
+    transition: 0.4s;
 }
+  
+.switch input:checked + .slider {
+    transform: translateX(19px);
+}
+  
 
 .sale {
     display: inline-block;
@@ -176,7 +196,7 @@ main {
     margin-left: 5.5px;
 }
 
-.sale p {
+.percentage {
     font-size: 10px;
     font-weight: 800;
     color: #ff8d68;
@@ -220,6 +240,10 @@ button {
     margin-left: 77px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 button p {
     font-family: 'Manrope', sans-serif !important;
     font-size: 12px;
@@ -234,10 +258,12 @@ button p {
     display: none;
 }
 
-#slider {
+.test {
+    width: 279px;
+    height: 8px;
+    background-color: #a4f3eb;
     position: absolute;
-    top: 302px;
-    z-index: 5;
+    top: 326px;
 }
 
 @media (min-width: 1440px) {
@@ -248,6 +274,7 @@ button p {
     .introduction p {
         font-size: 15px;
         margin-top: 12px;
+        width: 367px;
     }
 
     .container {
@@ -255,6 +282,11 @@ button p {
         padding: 40px 0 33px 0;
         margin-top: 92px;  
         position: relative;
+    }
+
+    .user-iteration-info {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .pageviews {
@@ -271,6 +303,8 @@ button p {
         justify-content: center;
         align-items: right;
         gap: 10px;
+        margin-top: 0;
+        margin-left: 98.5px;
     }
     
     .money span {
@@ -279,7 +313,7 @@ button p {
 
     #regulation {
         width: 444px;
-        order: 1;
+        order: 2;
     }
 
     .yearly-billing,
@@ -288,7 +322,7 @@ button p {
     }
 
     .sale {
-        width: 80px;
+        /* width: 80px; */
         padding: 2px 7px 3px 6px;
         margin-left: 9px;
     }
@@ -298,7 +332,7 @@ button p {
         margin-left: 2px;
     }
 
-    #slider {
+    #move {
         top: 193px;
     }
 
@@ -320,5 +354,9 @@ button p {
     button {
         margin-top: 0;
         margin-left: 133px;
+    }
+
+    .switch {
+        margin-left: 16px;
     }
 }

@@ -19,18 +19,20 @@
         </div>
         <div class="container">
             <div class="user-iteration-info">
-                <img id="slider" src="./images/icon-slider.svg" alt="Slider">
                 <p class="pageviews">100K PAGEVIEWS</p>
+                <input id="regulation" type="range" name="regulation" min="1" max="5" value="3">   
                 <p class="money">$16.00 <span class="month">/ month</span></p>
-                <input id="regulation" type="range" name="regulation" min="1" max="5" value="3">
-                
+                <!-- <input id="regulation" type="range" name="regulation" min="1" max="5" value="3">                 -->
             </div>
             <div class="time-range-billing">
                 <p class="monthly-billing">Monthly Billing</p>
-                <input id="monthly-regulation" type="range" name="monthly-regulation" min="1" max="2" value="1">
+                <label class="switch">
+                    <input id="monthly-regulation" type="checkbox" name="monthly-regulation">
+                    <span class="slider"></span>
+                  </label>
                 <p class="yearly-billing">Yearly Billing</p>
                 <div class="sale">
-                    <p>25%<span class="discount">discount</span></p>
+                    <p class="percentage">25%</p>
                 </div>
             </div>
             <div class="check-and-start">
