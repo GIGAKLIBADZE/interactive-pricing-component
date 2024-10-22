@@ -21,23 +21,23 @@ function calc() {
     if (checkMark) {
         if (switchNumber === 1) {
             price.forEach((p) => {
-                p.firstChild.textContent = "$6";
+                p.firstChild.textContent = "$6.00";
             });
         } else if (switchNumber === 2) {
             price.forEach((p) => {
-                p.firstChild.textContent = "$9";
+                p.firstChild.textContent = "$9.00";
             });
         } else if (switchNumber === 3) {   
             price.forEach((p) => {
-                p.firstChild.textContent = "$12";
+                p.firstChild.textContent = "$12.00";
             });
         } else if (switchNumber === 4) {  
             price.forEach((p) => {
-                p.firstChild.textContent = "$18";
+                p.firstChild.textContent = "$18.00";
             });
         } else if (switchNumber === 5) {   
             price.forEach((p) => {
-                p.firstChild.textContent = "$27";
+                p.firstChild.textContent = "$27.00";
             });
         }
     } else {
@@ -47,7 +47,7 @@ function calc() {
             });
     
             price.forEach((p) => {
-                p.firstChild.textContent = "$8";
+                p.firstChild.textContent = "$8.00";
             });
         } else if (switchNumber === 2) {
             views.forEach((pv) => {
@@ -55,7 +55,7 @@ function calc() {
             });
     
             price.forEach((p) => {
-                p.firstChild.textContent = "$12";
+                p.firstChild.textContent = "$12.00";
             });
         } else if (switchNumber === 3) {
             views.forEach((pv) => {
@@ -63,7 +63,7 @@ function calc() {
             });
     
             price.forEach((p) => {
-                p.firstChild.textContent = "$16";
+                p.firstChild.textContent = "$16.00";
             });
         } else if (switchNumber === 4) {
             views.forEach((pv) => {
@@ -71,7 +71,7 @@ function calc() {
             });
     
             price.forEach((p) => {
-                p.firstChild.textContent = "$24";
+                p.firstChild.textContent = "$24.00";
             });
         } else if (switchNumber === 5) {
             views.forEach((pv) => {
@@ -79,7 +79,7 @@ function calc() {
             });
     
             price.forEach((p) => {
-                p.firstChild.textContent = "$36";
+                p.firstChild.textContent = "$36.00";
             });
         }
     }
